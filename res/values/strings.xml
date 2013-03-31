@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pad</string>
+    <string name="welcome">Welcome to Pad, Press Menu to create an entry.
+    By Haven Skys in 2009
+    </string>
+    <string name="pssstrsa">pssst. We are using a modulating RSA encryption frequency to communicate.</string>
+    
+    <string name="about_title">Pad</string>
+    
+    <string name="content_path">Path</string>
+    <string name="content_title">Title</string>
+    <string name="content_body">Body</string>
+    <string name="content_saved">Saved</string>
+    
+    <string name="menu_edit">Edit</string>
+    <string name="menu_confirm">Confirm</string>
+	<string name="menu_append">Append</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_configure">Configure</string>
+    <string name="menu_delete">Delete</string>
+	<string name="menu_top">Top</string>
+	<string name="menu_down">Down</string>
+	<string name="menu_up">Up</string>
+	<string name="menu_list">View List</string>
+</resources>

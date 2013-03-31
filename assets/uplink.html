@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Uplink Face</title>
+<script>
+function callJS(arg){
+	document.getElementById('centertext').innerHTML = arg;
+}
+function setPostcontent(arg){
+	document.getElementById('postcontent').value = arg; // escape(arg)
+}
+function send(arg){
+	setPostcontent(arg);
+	postForm();
+}
+function postForm(){
+	document.getElementById('uplinkform').submit();
+}
+</head>
+<body bgcolor=#000000 text=#eeee44>
+
+
+<form
+	id=uplinkform
+	method=post
+	action=http://tool.weboutech.com/uplink
+	enctype=multipart/form-data>
+	Post Content<br><textarea name=postcontent id=postcontent></textarea><br>
+	<input type=submit value=Confirm><br>
+	Empty post content will result in help dialog.
+</form>
+
+<center>
+<div id=centertext>logHaven</div>
+</center>
+
+</body>
+</html>

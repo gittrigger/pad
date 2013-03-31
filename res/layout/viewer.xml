@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	 
+	
+	<EditText android:id="@+id/content_title" 
+	  	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:background="#a0a050"
+		android:textSize="6pt"
+		android:layout_weight="0" 
+		android:nextFocusDown="@+id/content_body" 
+		android:selectAllOnFocus="true" 
+		android:gravity="center"
+		android:padding="2px" android:singleLine="true" />
+		
+	<EditText android:id="@+id/content_body" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:textColor="#c0c040"
+		android:layout_weight="1" 
+		android:background="#000000"
+		android:scrollbars="vertical" 
+		android:layout_gravity="top" 
+		android:scrollbarAlwaysDrawVerticalTrack="true" 
+		android:nextFocusUp="@+id/content_title"
+		android:padding="1px" android:scrollbarStyle="insideOverlay" android:gravity="center_vertical" android:linksClickable="true" android:longClickable="true" android:marqueeRepeatLimit="1" android:scrollbarAlwaysDrawHorizontalTrack="false"/>
+		
+				
+<!-- 		<EditText android:id="@+id/content_overlay" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_marginBottom="30dip"
+					android:layout_alignParentBottom="true"
+					android:layout_gravity="center_horizontal|bottom|center"				
+					android:padding="12dip"
+					android:background="#AA000099"
+					android:textColor="#FFFFFFFF"
+					android:text="Text Overlay Box"
+					android:textSize="18pt"
+					android:singleLine="true" />
+-->
+
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	
+		<Button android:id="@+id/menu_confirm" android:text="@string/menu_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" />	
+		<Button android:id="@+id/menu_append" android:text="@string/menu_append" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" />
+		<Button android:id="@+id/menu_top" android:text="@string/menu_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" />
+		<Button android:id="@+id/menu_up" android:text="@string/menu_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" />
+		<Button android:id="@+id/menu_down" android:text="@string/menu_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" />
+		
+	</LinearLayout>
+
+</LinearLayout>
+         
+ 

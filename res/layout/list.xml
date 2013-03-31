@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+     
+    android:focusableInTouchMode="true"
+    android:padding="6dip"
+    android:id="@+id/pagewrap"
+    
+    android:alwaysDrawnWithCache="true"
+    android:descendantFocusability="afterDescendants" android:minWidth="600px" 
+    android:scrollbarAlwaysDrawHorizontalTrack="false" android:scrollbars="horizontal" 
+    android:layout_width="600px">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/viewpage"
+        android:orientation="horizontal" android:layout_alignParentTop="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="horizontal" 
+        >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="200px"
+        android:id="@+id/listpage"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/viewpage">
+        
+            <ScrollView android:id="@+id/optionlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+    >
+            <Button android:id="@+id/createnew"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:text="Create New Entry"
+            android:textSize="20sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:lineSpacingMultiplier="0.92"
+        />
+    	</ScrollView>
+    	<!--
+         <ListView android:id="@+id/optionlist:list"
+	          android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content" 
+	        	android:minHeight="?android:attr/listPreferredItemHeight"
+	        	android:layout_weight="1"
+	        	android:layout_alignParentTop="true"
+	        	android:scrollbarAlwaysDrawVerticalTrack="true">
+			
+		</ListView>
+		-->
+		
+        
+	  	<TextView android:id="@+id/create"    
+	          android:layout_width="fill_parent"
+	          android:layout_height="?android:attr/listPreferredItemHeight"
+	          android:minHeight="?android:attr/listPreferredItemHeight"
+	          android:text="Create New Record"
+	          android:layout_alignParentTop="true" 
+	          android:layout_gravity="center" android:gravity="center" 
+	          android:layout_weight="1" android:layout_above="@layout/list" android:background="#AA000044"/>
+	  	    
+	    <ListView android:id="@+id/android:list"
+	          android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent" 
+	        	android:minHeight="?android:attr/listPreferredItemHeight"
+	        	android:layout_weight="1"
+	        	android:layout_alignParentBottom="true"
+	        	android:scrollbarAlwaysDrawVerticalTrack="true"
+	        	 android:scrollbars="vertical" android:scrollbarStyle="insideInset"/>
+	        	
+    <!-- android:fastScrollEnabled="true" -->
+	        		
+	  	<TextView android:id="@+id/android:empty"    
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	          android:text="@string/welcome"
+	          android:layout_alignParentBottom="true" 
+	          android:minHeight="100px" android:layout_gravity="center" android:gravity="center" android:layout_weight="1"/>
+	          
+</LinearLayout>
+	          
+<!--
+		<WebView 	android:id="@+id/httpconsole" 
+					android:layout_height="60px" 
+					android:layout_width="fill_parent" 
+					android:layout_alignParentBottom="true"
+		/>
+-->	          
+<!-- 
+			<EditText
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:layout_marginBottom="50px"
+				android:layout_alignParentBottom="true"
+				android:layout_gravity="center_horizontal|bottom|center"				
+				android:background="#99009999"
+				android:textColor="#FFFFFFFF"
+				android:text="Text Overlay Box"
+				android:padding="12dip"
+				android:gravity="center_horizontal|center" 
+				android:textSize="18px" 
+				android:textStyle="normal" android:fadingEdgeLength="10px" android:fadingEdge="horizontal|vertical" android:enabled="true" android:editable="true" android:singleLine="true" android:layout_margin="15px" android:shadowDy="1" android:shadowDx="1"/>
+-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="300px"
+        android:id="@+id/viewpage"
+        android:orientation="vertical" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/listpage">
+        	  	<TextView android:id="@+id/viewpage"    
+	          android:layout_width="fill_parent"
+	          android:layout_height="?android:attr/listPreferredItemHeight"
+	          android:minHeight="?android:attr/listPreferredItemHeight"
+	          android:text="View"
+	          android:layout_alignParentTop="true" 
+	          android:layout_gravity="center" android:gravity="center" 
+	          android:layout_weight="1" android:background="#AA000022"/>
+        
+        	<EditText android:id="@+id/editbody" android:text="Empty content of body." android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#AA000044"/>
+        
+        </LinearLayout>
+        
+</LinearLayout>
+        
+</RelativeLayout>
